@@ -1,7 +1,7 @@
 #Max Wayne's makefile, following slide
 
 #target exe
-myexe: main.o myfunc.o
+make: main.o myfunc.o
 	g++ $(CFLAGS) -o myexe main.o myfunc.o
 
 #rebuild if either of the files below change
@@ -14,5 +14,4 @@ myfunc.o: myfunc.cpp myfunc.h
 
 #type 'make clean' to remove the following
 clean:
-	rm -f *.o myexe.exe
-
+	rm -f *.o myexe
