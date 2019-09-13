@@ -5,6 +5,7 @@
 
 int main()
 {
-	std::cout<<func()<<std::endl;
+	std::string a = func();
+	std::cout<< a <<std::endl;
 	return 0;
 }
